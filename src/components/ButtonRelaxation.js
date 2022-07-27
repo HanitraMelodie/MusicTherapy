@@ -1,0 +1,42 @@
+import React, { useState } from "react";
+import './ButtonDistraction.css';
+import Modal from 'react-modal';
+import icon_music from './../images/icon_music-notes.png';
+import icon_tree from './../images/icon_tree.png';
+import { useNavigate } from "react-router-dom";
+
+function ButtonRelaxation() {
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
+
+  function Distractiontype() {
+    setIsOpen(!isOpen);
+   
+
+  }
+
+  function NaturalSounds() {
+    navigate('/naturalsounds');
+    
+  }
+
+  function Melodies() {
+    navigate('/melodies');
+    
+  }
+
+
+
+  return (
+    <div className="App">
+      <button id ="ButtonDistraction" onClick={Distractiontype}>Relaxation ? </button>
+      <Modal id="DialogDistractionChoice"isOpen={isOpen} onRequestClose={Distractiontype} contentLabel="DistractionDialogbox">   
+        <div>What type of relaxations do you need ? </div>
+        <button class="ButtonDistractiontype" onClick={NaturalSounds}>NaturalSounds ? <img id="singingimage" src={icon_tree} alt="tree icon"/></button>
+        <button class="ButtonDistractiontype" onClick={Melodies}>Melodies ? <img id="dancingimage" src={icon_music} alt="music notes icon"/></button>
+        <footer id="progressbar"><progress value="40" max="100" /> <span>2/5</span></footer>
+      </Modal>
+    </div>
+  );
+}
+  export default ButtonRelaxation;

@@ -1,0 +1,93 @@
+#ButtonDistraction {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    background: #6b799e;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+#QuestionDistraction{
+    
+    max-width: 600px;
+    text-align: center;
+    color: #ffff;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    border: none;  
+    background: #a6c2ce;
+    margin: 50px auto;
+    font-size: 40px;
+    border-radius: 30px;
+    max-width: 600px;
+}
+#dancingimage {
+    float: inline-start;
+    width: 50px;
+    margin: -20px auto;
+    opacity: 50%;
+}
+
+#singingimage {
+    float: inline-start;
+    width: 50px;
+    margin: -20px auto;
+}
+
+#DialogDistractionChoice {
+    text-align: center;
+    color: #6b799e;
+    padding: 50px 20px;
+    margin: 100px auto;
+    font-size: 40px;
+    border: 5px solid #a6c2ce;
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+
+#ButtonDancing {
+    text-align: center;
+    color: #ffff;
+    background: #6b799e;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0px 0px 100px;
+    font-size: 20px;
+    border: 5px solid #6b799e;
+    max-width: 600px;
+}
+
+#ButtonSinging {
+    text-align: center;
+    color: #ffff;
+    background: #6b799e;
+    padding: 20px 0px 20px 0px;
+    margin: 40px 0 0 0px;
+}
+
+.ButtonDistractiontype {
+    text-align: center;
+    color: #ffff;
+    background: #6B799E;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 10px 10px;
+    font-size: 20px;
+    border: 5px solid #6b799e;
+    max-width: 600px;
+    border-radius: 30px;
+    float: left;
+}
+
+
+#progressbar {
+    margin: 320px 0 0 0px;
+    text-align: center;
+}

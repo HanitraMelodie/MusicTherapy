@@ -1,0 +1,33 @@
+
+  .header{
+    text-align: center;
+    color:#ffff;
+    background:#EBC57C;
+    border-radius: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px solid #EBC57C;
+    border-radius: 30px;
+    max-width: 800px;
+    margin:20px auto;
+    
+}
+
+.content{
+    text-align: center;
+    color:#ffff;
+    background:#A6C2CE;
+    border-radius: 5%;
+    font-size: 20px;
+    border: 5px solid #A6C2CE;
+    border-radius: 30px;
+    max-width: 800px;
+    margin:auto;
+}
+
+.footer{
+    display:block;
+    text-align: center;
+    margin: 30px auto;  
+    
+}

@@ -1,0 +1,27 @@
+#header {
+    text-align: center;
+    color: #ffff;
+    background: #ebc57c;
+    border-radius: 5%;
+    font-size: 5px;
+    border: 5px solid #ebc57c;
+    border-radius: 30px;
+    max-width: 800px;
+}
+
+#needtitle {
+    text-align: center;
+    color: #ffff;
+    background: #a6c2ce;
+    border-radius: 5%;
+    font-size: 20px;
+    border: 5px solid #a6c2ce;
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+#progressbar {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}

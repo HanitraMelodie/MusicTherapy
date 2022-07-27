@@ -1,0 +1,26 @@
+
+
+.correctanswer,.answer{
+    text-align: center;
+    color:#ffff;
+    background:#6B799E;
+    padding: 20px 0px 20px 0px;
+    margin: 40px 50px 0 0px;
+    font-size: 20px;
+    border: 5px solid #6B799E;
+    max-width: 600px; 
+}
+
+#RefreshButton{
+    display: block;
+    color:#ffff;
+    background:#6B799E;
+    padding: 50px 50px 50px 50px;
+    margin: 50px auto;
+    font-size: 40px;
+    border: 5px solid #6B799E;
+    max-width: 600px; 
+}
+#progressbar{
+    margin: 320px 0 0 0px;  
+}

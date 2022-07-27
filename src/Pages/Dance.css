@@ -1,0 +1,35 @@
+/*branding: color theme //#A6c2CE - bright blue // #9C8F96 - light brown //#EBC57C - light yellow //#6B799E - darker blue */
+
+#Dance-Page {
+    padding: 20px;
+}
+
+.Question-header {
+    text-align: center;
+    color: white;
+    background-color: #a6c2ce;
+    border-radius: 30px;
+    padding: 10px 500px;
+    margin: auto;
+    font-size: 20px;
+    max-width: 600px;
+}
+
+#dance_pic {
+    height: 100px;
+    float: left;
+    opacity: 0.5;
+    margin: auto;
+}
+
+.selection-div {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1350px;
+}
+
+.footer-div {
+    clear: both;
+}
