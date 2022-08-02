@@ -1,13 +1,13 @@
 import React from "react";
-
+import "./ContactPage.css";
 function ContactPage() {
   return (
     <div>
-      <header id="header">
+      <header id="header1">
         <h1 id="contact-page">Here are some contacts for support</h1>
       </header>
 
-      <div id="needtitle">
+      <div id="needtitle1">
         <p>Call Samaritans anonymously on 116</p>
 
         <p>

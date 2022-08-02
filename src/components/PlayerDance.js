@@ -1,26 +1,14 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import "./Player.css";
 
 function PlayerDance() {
   return (
-    <div>
-      <div className="video-div">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=FVAO2HSknb0"
-          controls="1"
-
-        />
-      </div>
-      <div className="video-div">
-        <ReactPlayer url="https://youtu.be/KRyks99Y9Qc" controls="1" />
-      </div>
-      <div className="video-div">
-        <ReactPlayer url="https://youtu.be/7TGbssGDvIA" controls="1" />
-      </div>
-      <div className="video-div">
-        <ReactPlayer url="https://youtu.be/sqe_AoQb3Q0" controls="1" />
-      </div>
+    <div className="video-div">
+      <ReactPlayer
+        playing={true}
+        url="https://youtube.com/playlist?list=PLr7gCWPwnxc5JK_34n08UZuOB72i7dnFY"
+        controls="1"
+      />
     </div>
   );
 }

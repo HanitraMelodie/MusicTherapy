@@ -3,41 +3,50 @@
     color: #ffff;
     background: #ebc57c;
     border-radius: 5%;
-    padding: 20px 500px;
-    margin: 0 auto;
     font-size: 30px;
     border: 5px solid #ebc57c;
     border-radius: 30px;
-    max-width: 800px;
+    margin:0px 20px 0px 20px;
 }
 
 #needtitle {
     text-align: center;
-    color: #ffff;
-    background: #a6c2ce;
+    color: #a6c2ce;
     border-radius: 5%;
-    padding: 20px 500px;
-    margin: 50px auto;
-    font-size: 40px;
-    border: 5px solid #a6c2ce;
-    border-radius: 30px;
-    max-width: 600px;
+    font-size: 30px;
+    margin:0px 20px 0px 20px;
 }
 
 #musicgirl {
-    float: left;
-    width: 200px;
-    margin: 0 -500px;
+    float:left;
+    width:120px;
 }
 
 #musicsheet {
     float: right;
     width: 200px;
-    margin: -150px -500px 0px 0px;
 }
 
 #relaxationpart,#distractionpart{
     display: block;
     text-align: center;
-    margin: 20px auto;
+    margin: 10px 0px 0px 0px;
 }
+@media only screen and (max-width: 768px) {
+    
+      #musicsheet {
+        float: right;
+        width: 50px;
+    }
+    #musicgirl {
+        float: left;
+        width: 100px;
+
+    }
+        #header{
+          font-size:20px
+        }
+        #needtitle{
+          font-size:20px
+        }
+      }

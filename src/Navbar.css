@@ -1,15 +1,14 @@
 ul {
   padding: 0;
-
 }
+
 li {
   display: inline-block;
   background: #ffff;
   color: #6b799e;
   border-radius: 50px;
   transition: all 200ms ease-in-out;
-  max-width: 200px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 100px;
   padding: 10px 10px 10px 10px;
   font-size: 20px;
 }
@@ -19,5 +18,25 @@ li:hover {
   background: #ebc57c;
   text-decoration: none;
 }
-a:link { text-decoration: none; 
-color:#6b799e;}
+
+a:link {
+  text-decoration: none;
+  color: #6b799e;
+}
+#menuicon{
+  width:30px;
+}
+
+@media only screen and (max-width: 768px) {
+  ul { 
+    display: grid;
+    grid-template-columns: 1fr ;
+    position: absolute;
+    background-color: white;
+
+  }
+  li{
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+   }
+}

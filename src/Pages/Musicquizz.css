@@ -1,13 +1,20 @@
-
-
+#headermusicquizz{
+    text-align: center;
+    color: #ffff;
+    background: #a6c2ce;;
+    border-radius: 5%;
+    font-size: 30px;
+    border: 5px solid #a6c2ce;;
+    border-radius: 30px;
+    margin:0px 20px 0px 20px;
+}
 .correctanswer,.answer{
     text-align: center;
     color:#ffff;
     background:#6B799E;
-    padding: 20px 0px 20px 0px;
-    margin: 40px 50px 0 0px;
+    margin: 0px 10px 0px 10px;
     font-size: 20px;
-    border: 5px solid #6B799E;
+    border: 5px solid#6B799E;
     max-width: 600px; 
 }
 
@@ -15,12 +22,19 @@
     display: block;
     color:#ffff;
     background:#6B799E;
-    padding: 50px 50px 50px 50px;
-    margin: 50px auto;
-    font-size: 40px;
+    margin: 20px 10px 0px 10px;
+    font-size: 20px;
     border: 5px solid #6B799E;
     max-width: 600px; 
 }
 #progressbar{
     margin: 320px 0 0 0px;  
 }
+@media only screen and (max-width: 768px) {
+    #headermusicquizz {
+      
+        font-size: 10px;
+     
+    }
+   
+    }

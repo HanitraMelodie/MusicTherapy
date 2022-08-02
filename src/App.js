@@ -1,16 +1,16 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Dance from './Pages/Dance';
-import Home from './Pages/Home';
-import ErrorPage from './Pages/ErrorPage';
-import Layout from './Pages/Layout';
-import ContactPage from './Pages/ContactPage';
-import Musicquizz from './Pages/Musicquizz';
-import Sing from './Pages/Sing';
-import Naturalsounds from './Pages/Naturalsounds';
-import Melodies from './Pages/Melodies';
-import Closure from './Pages/Closure';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dance from "./Pages/Dance";
+import Home from "./Pages/Home";
+import ErrorPage from "./Pages/ErrorPage";
+import Layout from "./Pages/Layout";
+import ContactPage from "./Pages/ContactPage";
+import Musicquizz from "./Pages/Musicquizz";
+import Sing from "./Pages/Sing";
+import Sounds from "./Pages/Sounds";
+import Melodies from "./Pages/Melodies";
+import Closure from "./Pages/Closure";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contactpage" element={<ContactPage />} />
           <Route path="/sing" element={<Sing />} />
           <Route path="/musicquizz" element={<Musicquizz />} />
-          <Route path="/naturalsounds" element={<Naturalsounds />} />
+          <Route path="/sounds" element={<Sounds />} />
           <Route path="/melodies" element={<Melodies />} />
           <Route path="/contactPage" element={<ContactPage />} />
           <Route path="/closure" element={<Closure />} />

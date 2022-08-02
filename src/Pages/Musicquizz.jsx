@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Musicquizz.css";
+
 import ButtonMood from "../components/ButtonMood";
 
 const Answer = ({ text, onClick }) => {
@@ -30,18 +31,6 @@ function Musicquizz() {
           "https://opentdb.com/api.php?amount=50&category=12&difficulty=easy&type=multiple&encode=base64"
         ).then(async (response) => {
           const data = await response.json();
-          //           {
-          //     "category": "RW50ZXJ0YWlubWVudDogTXVzaWM=",
-          //     "type": "bXVsdGlwbGU=",
-          //     "difficulty": "ZWFzeQ==",
-          //     "question": "V2hhdCBpcyBub3QgYSB3aW5kIGluc3RydW1lbnQ/",
-          //     "correct_answer": "VmlvbGE=",
-          //     "incorrect_answers": [
-          //         "T2JvZQ==",
-          //         "VHJvbWJvbmU=",
-          //         "RHVkdWs="
-          //     ]
-          // }
           const result = data.results.map((result) => {
             const question = atob(result.question);
             const correct_answer = atob(result.correct_answer);
@@ -85,6 +74,7 @@ function Musicquizz() {
     function checkAnswer(answer) {
       if (answer === correctAnswer) {
         alert("Correct!");
+        setIndex(index + 1);
       } else {
         alert("Incorrect!");
       }
@@ -109,17 +99,11 @@ function Musicquizz() {
 
   return (
     <div>
-      <header id="header">
-        <h1 id="music-page">Music quizz</h1>
+      <header id="headermusicquizz">
+        <h1 id="music-page">Music quiz</h1>
       </header>
 
-      <div id="music-part">
-        {renderQuestion()}
-
-        <button id="RefreshButton" onClick={() => setIndex(index + 1)}>
-          Next question ?
-        </button>
-      </div>
+      <div id="music-part">{renderQuestion()}</div>
 
       <div className="footer-div">
         <footer id="progressbar">
