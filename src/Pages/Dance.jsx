@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Dance.css";
 import PlayerDance from "../components/PlayerDance";
 import IconDance from "../images/dancing.png";
@@ -14,10 +14,12 @@ function Dance() {
       <div className="selection-div">
         <PlayerDance />
       </div>
-      <div id="progressbar">
-        <progress value="60" max="100" /> <span>3/5</span>
-      </div>
+
       <div className="footer-div">
+        <footer id="progressbar">
+          <progress value="60" max="100" /> <span>3/5</span>
+        </footer>
+
         <ButtonMood />
       </div>
     </div>

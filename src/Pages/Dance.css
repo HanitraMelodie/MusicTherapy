@@ -1,14 +1,13 @@
 /*branding: color theme //#A6c2CE - bright blue // #9C8F96 - light brown //#EBC57C - light yellow //#6B799E - darker blue */
 
-
 .Question-header {
     text-align: center;
     color: white;
     background-color: #a6c2ce;
     border-radius: 30px;
     font-size: 20px;
-
     padding:1px 0px 1px 0px;
+    margin:0px 0px 1px 1px;
 }
 
 #icon {
@@ -26,8 +25,10 @@
 
 }
 
+
 .footer-div {
-    clear: both;
+
+    margin:-300px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -42,4 +43,8 @@
         opacity: 0.5;
     
     }
+    .footer-div {
+        margin:-300px auto;
+    }
+  
     }

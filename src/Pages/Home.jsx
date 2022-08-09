@@ -4,6 +4,7 @@ import musicgirl from "./../images/musicgirl.png";
 import musicsheet from "./../images/musicsheet.png";
 import ButtonRelaxation from "../components/ButtonRelaxation.js";
 import ButtonDistraction from "../components/ButtonDistraction.js";
+// import Progressbar from "../components/Progressbar";
 
 function Home() {
   return (

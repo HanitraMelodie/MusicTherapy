@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
+import { MoodModal } from "./ButtonMood";
 
 function PlayerSing() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="video-div">
       <ReactPlayer
+        onEnded={() => setShowModal(true)}
         playing={true}
         url="https://youtube.com/playlist?list=PLr7gCWPwnxc74SvrxWB7ihnpSrCREWA5A"
         controls={true}
       />
+
+      <MoodModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 }
