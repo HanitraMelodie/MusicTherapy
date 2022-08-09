@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Dance.css";
 import PlayerDance from "../components/PlayerDance";
 import IconDance from "../images/dancing.png";
