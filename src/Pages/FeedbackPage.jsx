@@ -123,7 +123,7 @@ export function FeedbackPage() {
             type="text"
             name="name"
             value={name}
-            onChange={(value) => setName(value)}
+            onChange={(e) => setName(e.target.value)}
           />
         </label>
       </p>
@@ -134,7 +134,7 @@ export function FeedbackPage() {
             type="email"
             name="email"
             value={email}
-            onChange={(value) => setEmail(value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </label>
       </p>
@@ -144,7 +144,7 @@ export function FeedbackPage() {
           <textarea
             name="message"
             value={message}
-            onChange={(value) => setMessage(value)}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </label>
       </p>
