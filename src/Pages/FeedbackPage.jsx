@@ -140,7 +140,7 @@ export function FeedbackPage() {
       </p>
       <p>
         <label>
-          Message:{" "}
+          Message:
           <textarea
             name="message"
             value={message}
