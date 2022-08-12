@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { send } from "emailjs-com";
+// import { useState } from "react";
+// import { send } from "emailjs-com";
 import "./DefaultPagestyle.css";
 // import IconDance from "../images/dancing.png";
 export function FeedbackPage() {
