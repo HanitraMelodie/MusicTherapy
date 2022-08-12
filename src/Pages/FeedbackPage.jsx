@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import { send } from "emailjs-com";
 import "./DefaultPagestyle.css";
 // import IconDance from "../images/dancing.png";
@@ -101,22 +101,51 @@ export function FeedbackPage() {
   //   );
   // }
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   return (
-    <form name="contact" method="post" action="/">
+    <form>
       <input type="hidden" name="form-name" value="feedbackform" />
       <p>
         <label>
-          Your Name: <input type="text" name="name" />
+          Your Name:
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={(value) => setName(value)}
+          />
         </label>
       </p>
       <p>
         <label>
-          Your Email: <input type="email" name="email" />
+          Your Email:
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={(value) => setEmail(value)}
+          />
         </label>
       </p>
       <p>
         <label>
-          Message: <textarea name="message"></textarea>
+          Message:{" "}
+          <textarea
+            name="message"
+            value={message}
+            onChange={(value) => setMessage(value)}
+          ></textarea>
         </label>
       </p>
       <p>
@@ -126,9 +155,18 @@ export function FeedbackPage() {
             event.preventDefault();
             console.log(event);
 
-            fetch("/", { body: new FormData(event.target), method: "POST" })
-              .then(() => alert("worked"))
-              .catch(() => alert("didnt work"));
+            fetch("/", {
+              method: "POST",
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: encode({
+                "form-name": "feedbackform",
+                name,
+                email,
+                message,
+              }),
+            })
+              .then(() => alert("Success!"))
+              .catch((error) => alert(error));
           }}
         >
           Send
