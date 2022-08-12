@@ -104,6 +104,7 @@ export function FeedbackPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [successMessage, showSuccessMessage] = useState("");
 
   const encode = (data) => {
     return Object.keys(data)
@@ -114,65 +115,75 @@ export function FeedbackPage() {
   };
 
   return (
-    <form>
-      <input type="hidden" name="form-name" value="feedbackform" />
-      <p>
-        <label>
-          Your Name:
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-      </p>
-      <p>
-        <label>
-          Your Email:
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-      </p>
-      <p>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-        </label>
-      </p>
-      <p>
-        <button
-          type="submit"
-          onClick={(event) => {
-            event.preventDefault();
-            console.log(event);
+    <>
+      <form>
+        <input type="hidden" name="form-name" value="feedbackform" />
+        <p>
+          <label>
+            Your Name:
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email:
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:
+            <textarea
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+          </label>
+        </p>
+        <p>
+          <button
+            type="submit"
+            onClick={(event) => {
+              event.preventDefault();
+              console.log(event);
 
-            fetch("/", {
-              method: "POST",
-              headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: encode({
-                "form-name": "feedbackform",
-                name,
-                email,
-                message,
-              }),
-            })
-              .then(() => alert("Success!"))
-              .catch((error) => alert(error));
-          }}
-        >
-          Send
-        </button>
-      </p>
-    </form>
+              fetch("/", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: encode({
+                  "form-name": "feedbackform",
+                  name,
+                  email,
+                  message,
+                }),
+              })
+                .then(() => showSuccessMessage(true))
+                .catch((error) => alert(error));
+            }}
+          >
+            Send
+          </button>
+        </p>
+      </form>
+      {successMessage && (
+        <div>
+          <h1>Feedback submitted successfully</h1>
+          <p>Thank you for your feeback!</p>
+        </div>
+      )}
+    </>
   );
 }
 
