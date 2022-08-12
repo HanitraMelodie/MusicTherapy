@@ -100,6 +100,7 @@ export function FeedbackPage() {
   //     </div>
   //   );
   // }
+
   return (
     <form name="contact" method="post" action="/">
       <input type="hidden" name="form-name" value="feedbackform" />
@@ -119,7 +120,19 @@ export function FeedbackPage() {
         </label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button
+          type="submit"
+          onClick={(event) => {
+            event.preventDefault();
+            console.log(event);
+
+            fetch("/", { body: new FormData(event.target), method: "POST" })
+              .then(() => alert("worked"))
+              .catch(() => alert("didnt work"));
+          }}
+        >
+          Send
+        </button>
       </p>
     </form>
   );
