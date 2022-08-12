@@ -1,6 +1,6 @@
 import ButtonMood from "../components/ButtonMood";
 import React from "react";
-import "./Dance.css";
+import "./DefaultPagestyle.css";
 import Icon_dance from "../images/icon_tree.png";
 import PlayerNaturalSounds from "../components/PlayerNaturalSounds";
 

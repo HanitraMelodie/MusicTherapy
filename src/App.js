@@ -1,33 +1,35 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dance from "./Pages/Dance";
-import Home from "./Pages/Home";
+import DancePage from "./Pages/DancePage";
+import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
 import Layout from "./Pages/Layout";
 import ContactPage from "./Pages/ContactPage";
-import Musicquizz from "./Pages/Musicquizz";
-import Sing from "./Pages/Sing";
-import Sounds from "./Pages/Sounds";
-import Melodies from "./Pages/Melodies";
-import Closure from "./Pages/Closure";
+import MusicquizPage from "./Pages/MusicquizPage";
+import SingPage from "./Pages/SingPage";
+import SoundsPage from "./Pages/SoundsPage";
+import MelodiesPage from "./Pages/MelodiesPage";
+import ClosurePage from "./Pages/ClosurePage";
+import FeedbackPage from "./Pages/FeedbackPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route index element={<HomePage />} />
+          <Route path="/homepage" element={<HomePage />} />
           <Route path="*" element={<ErrorPage />} />
-          <Route path="/dance" element={<Dance />} />
+          <Route path="/dancepage" element={<DancePage />} />
           <Route path="/contactpage" element={<ContactPage />} />
-          <Route path="/sing" element={<Sing />} />
-          <Route path="/musicquizz" element={<Musicquizz />} />
-          <Route path="/sounds" element={<Sounds />} />
-          <Route path="/melodies" element={<Melodies />} />
+          <Route path="/singpage" element={<SingPage />} />
+          <Route path="/musicquizpage" element={<MusicquizPage />} />
+          <Route path="/soundspage" element={<SoundsPage />} />
+          <Route path="/melodiespage" element={<MelodiesPage />} />
           <Route path="/contactPage" element={<ContactPage />} />
-          <Route path="/closure" element={<Closure />} />
+          <Route path="/closurepage" element={<ClosurePage />} />
+          <Route path="/feedbackpage" element={<FeedbackPage />} />
         </Route>
       </Routes>
     </Router>

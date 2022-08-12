@@ -29,7 +29,7 @@ test("renders Closure test", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("renders Closure test", () => {
+test("renders ErrorPage test", () => {
   render(<ErrorPage />);
   const linkElement = screen.getByText(/error/i);
   expect(linkElement).toBeInTheDocument();
@@ -46,7 +46,6 @@ test("renders Sing test", () => {
   const linkElement = screen.getByText(/along/i);
   expect(linkElement).toBeInTheDocument();
 });
-
 
 test("renders Musicquizz test", () => {
   render(<Musicquizz />);

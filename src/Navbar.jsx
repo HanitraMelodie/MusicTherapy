@@ -10,22 +10,25 @@ const FullNavbar = () => (
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/dance">Dance</Link>
+        <Link to="/dancepage">Dance</Link>
       </li>
       <li>
-        <Link to="/sing">Sing</Link>
+        <Link to="/singpage">Sing</Link>
       </li>
       <li>
-        <Link to="/musicquizz">Musicquizz</Link>
+        <Link to="/musicquizpage">Musicquiz</Link>
       </li>
       <li>
-        <Link to="/sounds">Sounds</Link>
+        <Link to="/soundspage">Sounds</Link>
       </li>
       <li>
-        <Link to="/melodies">Melodies</Link>
+        <Link to="/melodiespage">Melodies</Link>
       </li>
       <li>
         <Link to="/contactpage">Contact</Link>
+      </li>
+      <li>
+        <Link to="/feedbackpage">Feedback</Link>
       </li>
     </ul>
   </nav>

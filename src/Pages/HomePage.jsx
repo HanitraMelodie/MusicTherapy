@@ -1,9 +1,10 @@
 import React from "react";
-import "./Home.css";
+import "./HomePage.css";
 import musicgirl from "./../images/musicgirl.png";
 import musicsheet from "./../images/musicsheet.png";
 import ButtonRelaxation from "../components/ButtonRelaxation.js";
 import ButtonDistraction from "../components/ButtonDistraction.js";
+// import { ProgressBar } from "react-bootstrap";
 // import Progressbar from "../components/Progressbar";
 
 function Home() {
@@ -34,6 +35,7 @@ function Home() {
         {" "}
         <ButtonRelaxation />
       </div>
+      {/* <Progressbar /> */}
       <footer id="progressbar">
         <progress value="20" max="100" /> <span>1/5</span>
       </footer>

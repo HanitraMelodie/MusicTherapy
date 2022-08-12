@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ButtonMood.css";
+import "./ButtonDistractionRelaxationMood.css";
 import Modal from "react-modal";
 import sadface from "./../images/sadface.png";
 import happyface from "./../images/smiley.png";
@@ -14,11 +14,11 @@ export function MoodModal({ isOpen, onClose }) {
   const navigate = useNavigate();
 
   function SadMood() {
-    navigate("/ContactPage");
+    navigate("/contactPage");
   }
 
   function Goodmood() {
-    navigate("/Closure");
+    navigate("/closurepage");
   }
 
   return (

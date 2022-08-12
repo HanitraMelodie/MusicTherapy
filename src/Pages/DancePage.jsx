@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dance.css";
+import "./DefaultPagestyle.css";
 import PlayerDance from "../components/PlayerDance";
 import IconDance from "../images/dancing.png";
 import ButtonMood from "../components/ButtonMood";

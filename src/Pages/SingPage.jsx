@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dance.css";
+import "./DefaultPagestyle.css";
 import PlayerSing from "../components/PlayerSing";
 import singing from "../images/singing.png";
 import ButtonMood from "../components/ButtonMood";
