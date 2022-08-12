@@ -101,7 +101,7 @@ export function FeedbackPage() {
   //   );
   // }
   return (
-    <form name="contact" method="post">
+    <form name="contact" method="post" action="/">
       <input type="hidden" name="form-name" value="feedbackform" />
       <p>
         <label>
