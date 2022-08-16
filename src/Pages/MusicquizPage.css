@@ -1,3 +1,12 @@
+.Question-header {
+    text-align: center;
+    color: white;
+    background-color: #a6c2ce;
+    border-radius: 30px;
+    font-size: 20px;
+    padding:1px 0px 1px 0px;
+    margin:0px 0px 1px 1px;
+}
 #headermusicquizz{
     text-align: center;
     color: #ffff;

@@ -116,10 +116,17 @@ export function FeedbackPage() {
 
   return (
     <>
-      <form>
+      <div className="Question-header">
+        <h1>We value your feedback</h1>
+      </div>
+      <form className="feedbackform">
+        <h2 id="needtitle">
+          Did you enjoy using our platform ? Please let us know how to improve
+        </h2>
         <input type="hidden" name="form-name" value="feedbackform" />
+
         <p>
-          <label>
+          <label className="input">
             Your Name:
             <input
               type="text"
@@ -130,7 +137,7 @@ export function FeedbackPage() {
           </label>
         </p>
         <p>
-          <label>
+          <label className="input">
             Your Email:
             <input
               type="email"
@@ -141,7 +148,7 @@ export function FeedbackPage() {
           </label>
         </p>
         <p>
-          <label>
+          <label className="input">
             Message:
             <textarea
               name="message"
@@ -152,6 +159,7 @@ export function FeedbackPage() {
         </p>
         <p>
           <button
+            id="ButtonMood"
             type="submit"
             onClick={(event) => {
               event.preventDefault();
@@ -179,7 +187,7 @@ export function FeedbackPage() {
       </form>
       {successMessage && (
         <div>
-          <h1>Feedback submitted successfully</h1>
+          <h1 className="Question-header">Feedback submitted successfully</h1>
           <p>Thank you for your feeback!</p>
         </div>
       )}

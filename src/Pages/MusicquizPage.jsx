@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./MusicquizPage.css";
-import "./DefaultPagestyle.css";
 
 import ButtonMood from "../components/ButtonMood";
 
@@ -100,7 +99,7 @@ function Musicquizz() {
 
   return (
     <div>
-      <header id="Question-header">
+      <header className="Question-header">
         <h1 id="music-page">Music quiz</h1>
       </header>
 

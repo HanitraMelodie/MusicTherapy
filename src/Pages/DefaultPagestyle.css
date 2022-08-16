@@ -29,11 +29,20 @@
 
 }
 
+p{
+    text-align: center;  
+}
 .selection-div {
     padding: 20px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+
+}
+.feedback-div {
+    display:flex;
+    justify-content: center;
+    margin: 10px 0px 0px 100px;
 
 }
 
