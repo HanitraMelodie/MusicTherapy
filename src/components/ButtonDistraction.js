@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import dancing from "./../images/dancing.png";
 import singing from "./../images/singing.png";
 import { useNavigate } from "react-router-dom";
-
+import Progressbar from "../components/Progressbar";
 function ButtonDistraction() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -47,9 +47,7 @@ function ButtonDistraction() {
         <button class="ButtonDistractiontype" onClick={Musicquizzing}>
           Music quizz ?
         </button>
-        <footer id="progressbar">
-          <progress value="40" max="100" /> <span>2/5</span>
-        </footer>
+        <Progressbar value="2" />
       </Modal>
     </div>
   );

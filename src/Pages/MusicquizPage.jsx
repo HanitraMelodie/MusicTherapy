@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./MusicquizPage.css";
-
+import Progressbar from "../components/Progressbar";
 import ButtonMood from "../components/ButtonMood";
 
 const Answer = ({ text, onClick }) => {
@@ -106,10 +106,7 @@ function Musicquizz() {
       <div id="music-part">{renderQuestion()}</div>
 
       <div className="footer-div">
-        <footer id="progressbar">
-          <progress value="60" max="100" /> <span>3/5</span>
-        </footer>
-
+        <Progressbar value="3" />
         <ButtonMood />
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 import "./DefaultPagestyle.css";
 import Icon_dance from "../images/icon_tree.png";
 import PlayerNaturalSounds from "../components/PlayerNaturalSounds";
-
+import Progressbar from "../components/Progressbar";
 function Sounds() {
   return (
     <div id="NaturalSounds-Page">
@@ -20,9 +20,7 @@ function Sounds() {
       </div>
 
       <div className="footer-div">
-        <footer id="progressbar">
-          <progress value="60" max="100" /> <span>3/5</span>
-        </footer>
+        <Progressbar value="3" />
 
         <ButtonMood />
       </div>

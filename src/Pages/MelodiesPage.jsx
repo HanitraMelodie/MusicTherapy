@@ -3,7 +3,7 @@ import React from "react";
 import "./DefaultPagestyle.css";
 import icon_music from "../images/icon_music-notes.png";
 import PlayerMelodies from "../components/PlayerMelodies";
-
+import Progressbar from "../components/Progressbar";
 function Melodies() {
   return (
     <div id="Melodies-Page">
@@ -20,9 +20,7 @@ function Melodies() {
       </div>
 
       <div className="footer-div">
-        <footer id="progressbar">
-          <progress value="60" max="100" /> <span>3/5</span>
-        </footer>
+        <Progressbar value="3" />
 
         <ButtonMood />
       </div>

@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
-export function Progressbar() {
-  const [value, setValue] = useState(1);
+export function Progressbar({ value }) {
   return (
-    <div className="App">
-      <button id="ButtonMood" value={value} onClick={() => setValue(value + 1)}>
-        Next
-      </button>
+    <div>
       <footer id="progressbar">
-        <progress value={`${value}`} max="5" /> <span>{value}/5</span>
+        <progress value={`${value}`} max="6" /> <span>{value}/6</span>
       </footer>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import { send } from "emailjs-com";
 import "./DefaultPagestyle.css";
+import Progressbar from "../components/Progressbar";
 // import IconDance from "../images/dancing.png";
 export function FeedbackPage() {
   //   const [toSend, setToSend] = useState({
@@ -191,6 +192,7 @@ export function FeedbackPage() {
           <p>Thank you for your feeback!</p>
         </div>
       )}
+      <Progressbar value="6" />
     </>
   );
 }

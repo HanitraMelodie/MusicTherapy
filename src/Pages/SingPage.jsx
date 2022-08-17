@@ -3,7 +3,7 @@ import "./DefaultPagestyle.css";
 import PlayerSing from "../components/PlayerSing";
 import singing from "../images/singing.png";
 import ButtonMood from "../components/ButtonMood";
-
+import Progressbar from "../components/Progressbar";
 function Sing() {
   return (
     <div id="Sing-Page">
@@ -21,9 +21,7 @@ function Sing() {
       </div>
 
       <div className="footer-div">
-        <footer id="progressbar">
-          <progress value="60" max="100" /> <span>3/5</span>
-        </footer>
+        <Progressbar value="3" />
 
         <ButtonMood />
       </div>

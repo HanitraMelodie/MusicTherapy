@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import sadface from "./../images/sadface.png";
 import happyface from "./../images/smiley.png";
 import { useNavigate } from "react-router-dom";
+import Progressbar from "../components/Progressbar";
 // 1. I want a new component
 // 2. it will _optionally_ take an 'isOpen' parameter
 // 3. the component will be the existing dialog (inside the button mood component)
@@ -36,9 +37,7 @@ export function MoodModal({ isOpen, onClose }) {
         <button className="ButtonMoodtype" onClick={SadMood}>
           No <img className="smiley" src={sadface} alt="sad face" />
         </button>
-        <footer id="progressbar">
-          <progress value="80" max="100" /> <span>4/5</span>
-        </footer>
+        <Progressbar value="4" />
       </div>
     </Modal>
   );

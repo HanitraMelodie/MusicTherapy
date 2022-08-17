@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import icon_music from "./../images/icon_music-notes.png";
 import icon_tree from "./../images/icon_tree.png";
 import { useNavigate } from "react-router-dom";
-
+import Progressbar from "../components/Progressbar";
 function ButtonRelaxation() {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +41,7 @@ function ButtonRelaxation() {
           Melodies ?{" "}
           <img id="dancingimage" src={icon_music} alt="music notes icon" />
         </button>
-        <footer id="progressbar">
-          <progress value="40" max="100" /> <span>2/5</span>
-        </footer>
+        <Progressbar value="2" />
       </Modal>
     </div>
   );

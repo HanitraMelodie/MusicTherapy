@@ -1,5 +1,8 @@
 import React from "react";
 import "./ContactPage.css";
+import Progressbar from "../components/Progressbar";
+import ButtonFeedback from "../components/ButtonFeedback";
+
 function ContactPage() {
   return (
     <div>
@@ -20,10 +23,9 @@ function ContactPage() {
           - Fri)
         </p>
       </div>
-
-      <footer id="progressbar">
-        <progress value="100" max="100" /> <span>5/5</span>
-      </footer>
+      <p id="needtitle1"> Let us know how we can improve our website</p>
+      <ButtonFeedback />
+      <Progressbar value="5" />
     </div>
   );
 }

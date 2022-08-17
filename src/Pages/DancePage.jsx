@@ -3,7 +3,7 @@ import "./DefaultPagestyle.css";
 import PlayerDance from "../components/PlayerDance";
 import IconDance from "../images/dancing.png";
 import ButtonMood from "../components/ButtonMood";
-
+import Progressbar from "../components/Progressbar";
 function Dance() {
   return (
     <div id="Dance-Page">
@@ -16,9 +16,7 @@ function Dance() {
       </div>
 
       <div className="footer-div">
-        <footer id="progressbar">
-          <progress value="60" max="100" /> <span>3/5</span>
-        </footer>
+        <Progressbar value="3" />
 
         <ButtonMood />
       </div>

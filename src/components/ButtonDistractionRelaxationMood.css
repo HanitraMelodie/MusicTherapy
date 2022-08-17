@@ -137,9 +137,6 @@
     max-width: 800px;
 }
 .ButtonMoodtype{
- 
-
-    text-align: center;
     color: #ffff;
     background: #6B799E;
     padding: 20px 0px 10px 0px;
@@ -148,8 +145,7 @@
     border: 5px solid #6b799e;
     max-width: 600px;
     border-radius: 30px;
-    float: left;
-    
+    float: left;    
 }
 
 
