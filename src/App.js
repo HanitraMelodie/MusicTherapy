@@ -27,7 +27,6 @@ function App() {
           <Route path="/musicquizpage" element={<MusicquizPage />} />
           <Route path="/soundspage" element={<SoundsPage />} />
           <Route path="/melodiespage" element={<MelodiesPage />} />
-          <Route path="/contactPage" element={<ContactPage />} />
           <Route path="/closurepage" element={<ClosurePage />} />
           <Route path="/feedbackpage" element={<FeedbackPage />} />
         </Route>
